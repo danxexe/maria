@@ -29,7 +29,8 @@
                              "www.maria.cloud"      "user.maria.cloud"
                              "user.maria.cloud"     "www.maria.cloud"
                              "dev.maria.cloud"      "dev-user.maria.cloud"
-                             "dev-user.maria.cloud" "dev.maria.cloud"}
+                             "dev-user.maria.cloud" "dev.maria.cloud"
+                             "maria.danxexe.dev"    "maria.danxexe.dev"}
       other-port-lookup {"8701" "8702"
                          "8702" "8701"}
       parent-hostname (cond->> this-hostname

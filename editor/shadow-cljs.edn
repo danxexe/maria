@@ -13,8 +13,8 @@
               :language-in :ecmascript5
               :output-wrapper false}}
    :build-hooks [(cljs-static.shadow/write-assets!
-                   {:public-path "public" "/live.html" (maria.static/live)})]
-   :output-dir "public/js/compiled/live"
+                   {:public-path ".." "/live.html" (maria.static/live)})]
+   :output-dir "../js/compiled/live"
    :module-hash-names true
    :asset-path "/js/compiled/live"
    :modules {:shadow-live {:init-fn maria.frames.live-frame/init}}
@@ -23,17 +23,17 @@
 
   :bootstrap
   {:target :bootstrap
-   :output-dir "public/js/compiled/bootstrap"
+   :output-dir "../js/compiled/bootstrap"
    :module-hash-names true
    :entries [maria.user]
    :exclude [cljs.js]}
 
   :trusted
   {:target :browser
-   :output-dir "public/js/compiled/trusted"
+   :output-dir "../js/compiled/trusted"
    :asset-path "/js/compiled/trusted"
    :build-hooks [(cljs-static.shadow/write-assets!
-                   {:public-path "public" "/index.html" (maria.static/index)})]
+                   {:public-path ".." "/index.html" (maria.static/index)})]
    :modules {:shadow-trusted {:entries [maria.frames.trusted-frame]}}
    :devtools {:autoload true}
    :module-hash-names true
